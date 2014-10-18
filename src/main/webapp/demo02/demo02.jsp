@@ -27,5 +27,12 @@
         <input type="submit"/>
     </form>
 </p>
+
+<p>
+    <form action="../webapi/myBean/jack" method="post">
+        <input name="age"><br/>
+        <input type="submit"/>
+    </form>
+</p>
 </body>
 </html>
