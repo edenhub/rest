@@ -1,7 +1,9 @@
 package pri.adam.demo02;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.Context;
 
 /**
  * Created by adam on 14-10-18.
@@ -10,5 +12,8 @@ import javax.ws.rs.Path;
 public class Req {
 
     @GET
-    public void testRequest(){}
+    public void testRequest(@Context HttpServletRequest request){
+        System.out.println(request.getContextPath());
+
+    }
 }

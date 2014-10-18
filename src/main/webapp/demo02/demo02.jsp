@@ -34,5 +34,6 @@
         <input type="submit"/>
     </form>
 </p>
+<p><a href="../webapi/req">request</a> </p>
 </body>
 </html>

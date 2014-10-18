@@ -1,5 +1,7 @@
 package pri.adam.demo02;
 
+import javax.ws.rs.DefaultValue;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 
@@ -10,7 +12,8 @@ public class MyBean {
     @PathParam("username")
     private String username;
 
-    @QueryParam("age")
+    @FormParam("age")
+    @DefaultValue("23")
     private int age;
 
     @Override
