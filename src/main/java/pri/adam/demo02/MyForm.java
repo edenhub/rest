@@ -3,7 +3,9 @@ package pri.adam.demo02;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
 
 /**
@@ -14,8 +16,10 @@ import javax.ws.rs.core.UriInfo;
 public class MyForm {
 
     @POST
-    public void post(@FormParam("name")String name,@Context UriInfo uriInfo){
+    @Produces("text/plain")
+    public String post(@FormParam("name")String name,@Context UriInfo uriInfo){
         System.out.println(uriInfo.getAbsolutePath().toString());
         System.out.println("name : "+name);
+        return "inMyForm";
     }
 }
