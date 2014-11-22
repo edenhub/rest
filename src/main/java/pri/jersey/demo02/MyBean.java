@@ -1,12 +1,11 @@
-package pri.adam.demo02;
+package pri.jersey.demo02;
 
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.QueryParam;
 
 /**
- * Created by adam on 14-10-18.
+ * Created by jersey on 14-10-18.
  */
 public class MyBean {
     @PathParam("username")

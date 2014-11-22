@@ -1,7 +1,7 @@
-package pri.adam.demo02;
+package pri.jersey.demo02;
 
 /**
- * Created by adam on 14-10-18.
+ * Created by jersey on 14-10-18.
  */
 public class MyParam{
     public String name;

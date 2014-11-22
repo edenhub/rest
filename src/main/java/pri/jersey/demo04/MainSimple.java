@@ -1,15 +1,10 @@
-package pri.adam.demo04;
+package pri.jersey.demo04;
 
 //import org.glassfish.grizzly.http.server.HttpServer;
 //import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
-import org.glassfish.jersey.server.ResourceConfig;
-
-
-import java.io.IOException;
-import java.net.URI;
 
 /**
- * Created by adam on 14-10-18.
+ * Created by jersey on 14-10-18.
  */
 public class MainSimple {
 

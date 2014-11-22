@@ -1,4 +1,4 @@
-package pri.adam.demo05;
+package pri.jersey.demo05;
 
 import org.junit.Test;
 
@@ -9,10 +9,9 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
-import java.net.URI;
 
 /**
- * Created by adam on 14-10-29.
+ * Created by jersey on 14-10-29.
  */
 public class Test02 {
     public static final String url = "http://localhost:8080/rest/webapi/";
@@ -29,7 +28,7 @@ public class Test02 {
     @Test
     public void testAdd(){
         WebTarget webTarget = client.target(url).path(rootPath);
-        User user = new User("0001","adam");
+        User user = new User("0001","jersey");
         Response response = webTarget.request().buildPost(Entity.entity(user, MediaType.APPLICATION_JSON)).invoke();
 
         response.close();

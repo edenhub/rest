@@ -1,4 +1,4 @@
-package pri.adam.demo02;
+package pri.jersey.demo02;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
@@ -6,7 +6,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Context;
 
 /**
- * Created by adam on 14-10-18.
+ * Created by jersey on 14-10-18.
  */
 @Path("req")
 public class Req {

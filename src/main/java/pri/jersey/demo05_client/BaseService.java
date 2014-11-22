@@ -1,10 +1,10 @@
-package pri.adam.demo05_client;
+package pri.jersey.demo05_client;
 
 import javax.ws.rs.*;
 import java.io.File;
 
 /**
- * Created by adam on 14-11-9.
+ * Created by jersey on 14-11-9.
  */
 @Path("clientBase")
 public class BaseService {

@@ -1,4 +1,4 @@
-package pri.adam.demo03;
+package pri.jersey.demo03;
 
 import javax.inject.Singleton;
 import javax.ws.rs.GET;
@@ -8,7 +8,7 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 
 /**
- * Created by adam on 14-10-18.
+ * Created by jersey on 14-10-18.
  */
 @Singleton
 public class MySub {

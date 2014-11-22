@@ -1,13 +1,12 @@
-package pri.adam.demo05;
+package pri.jersey.demo05;
 
 import javax.ws.rs.*;
 import java.util.Collection;
 import java.util.Hashtable;
-import java.util.List;
 import java.util.Map;
 
 /**
- * Created by adam on 14-10-29.
+ * Created by jersey on 14-10-29.
  */
 
 @Path("clientLogic")

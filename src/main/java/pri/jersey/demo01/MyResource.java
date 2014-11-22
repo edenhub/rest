@@ -1,4 +1,4 @@
-package pri.adam.demo01;
+package pri.jersey.demo01;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

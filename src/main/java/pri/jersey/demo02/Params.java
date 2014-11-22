@@ -1,9 +1,9 @@
-package pri.adam.demo02;
+package pri.jersey.demo02;
 
 import javax.ws.rs.*;
 
 /**
- * Created by adam on 14-10-18.
+ * Created by jersey on 14-10-18.
  */
 
 @Path("params")
@@ -12,7 +12,7 @@ public class Params {
     @GET
     @Produces
     public void testParams(
-      @QueryParam("name")@DefaultValue("adam")String name,
+      @QueryParam("name")@DefaultValue("jersey")String name,
       @QueryParam("age")@DefaultValue("23")int age,
       @QueryParam("myParam")@DefaultValue("my")MyParam myParam
 

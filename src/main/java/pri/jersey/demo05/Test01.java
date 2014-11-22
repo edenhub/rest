@@ -1,4 +1,4 @@
-package pri.adam.demo05;
+package pri.jersey.demo05;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 /**
- * Created by adam on 14-10-28.
+ * Created by jersey on 14-10-28.
  */
 public class Test01 {
 
@@ -21,7 +21,7 @@ public class Test01 {
         WebTarget webTarget = client.target("http://localhost:8080/rest/webapi/").path("myForm");
 
         Form form = new Form();
-        form.param("name","adam");
+        form.param("name","jersey");
 
         Response response = webTarget.request().buildPost(
                 Entity.entity(form,MediaType.APPLICATION_FORM_URLENCODED_TYPE)).invoke();

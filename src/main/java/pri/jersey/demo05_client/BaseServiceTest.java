@@ -1,22 +1,20 @@
-package pri.adam.demo05_client;
+package pri.jersey.demo05_client;
 
 import org.junit.Test;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
-import javax.ws.rs.client.Invocation;
 import javax.ws.rs.core.Form;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.net.URISyntaxException;
 import java.util.Scanner;
 
 /**
- * Created by adam on 14-11-9.
+ * Created by jersey on 14-11-9.
  */
 public class BaseServiceTest {
     public static final String url = "http://localhost:8080/rest/webapi/";
@@ -34,7 +32,7 @@ public class BaseServiceTest {
     public void testBaseQueryParm(){
         Client client = ClientBuilder.newClient();
         String response = client.target(url).path(rootPath+"baseQueryParam")
-                .queryParam("name","adam")
+                .queryParam("name","jersey")
                 .request().buildGet().invoke(String.class);
         System.out.println(response);
     }
@@ -55,7 +53,7 @@ public class BaseServiceTest {
     @Test
     public void testBaseForm() throws FileNotFoundException {
         Client client = ClientBuilder.newClient();
-        Form form = new Form().param("name","adam");
+        Form form = new Form().param("name","jersey");
         Response response = client.target(url).path(rootPath+"baseForm")
                 .request().buildPost(
                         Entity.entity(form,
